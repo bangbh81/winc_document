@@ -95,7 +95,16 @@ WizFi360을 예제로써 설명함
 ```
 
 ```json
-
+"Firmware" : {
+        "fwVersion": {"type": "integer"},
+},
+"HostFirmware" : {
+        "fwVersion": {"type": "integer"},
+},
+"UserProperty": {
+        "UpMessage":{"type": "string","maxNo":50}
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjU5OTg4NzAsMjExNzQyNjgzNF19
+eyJoaXN0b3J5IjpbMTU4NTkyNDY1OSwyMTE3NDI2ODM0XX0=
 -->
