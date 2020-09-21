@@ -71,3 +71,6 @@ Desired property는 총 3 종류로 이루어 진다.
 디바이스로부터 발생된 데이터는 JSON 형식으로 아래 토픽을 통해 전달되어야 한다.
 **Publish topic:** `devices/{devices name}/message/events/`
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3NDU3NDQwNjBdfQ==
+-->
