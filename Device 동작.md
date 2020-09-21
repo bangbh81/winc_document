@@ -120,9 +120,12 @@ WizFi360을 예제로써 설명함
 ```
 
 #### Event data
-
-
+```json
+"EventDataFormat":{
+	""
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNDc1MjYsMTU4NTkyNDY1OSwyMTE3ND
-I2ODM0XX0=
+eyJoaXN0b3J5IjpbMjkwOTA3NzA5LDE1ODU5MjQ2NTksMjExNz
+QyNjgzNF19
 -->
