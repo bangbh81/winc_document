@@ -110,8 +110,8 @@ WizFi360을 예제로써 설명함
 #### Reported property structure
 ```json
 "DeviceStatus"  : {
-	"fwStatus": {"type":"boolean", "initial_state":"false"},
-	
+	"FWVer": {"type": "integer", "initial_state":0},
+	"hostFWVer": {"type": "integer", "initial_state":0},
 	"isActivated": {"type": "true", "initial_state":"false"}
 },
 "UserProperty": {
@@ -120,7 +120,9 @@ WizFi360을 예제로써 설명함
 ```
 
 #### Event data
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MDY0MDY1NCwxNTg1OTI0NjU5LDIxMT
-c0MjY4MzRdfQ==
+eyJoaXN0b3J5IjpbMjAzNDc1MjYsMTU4NTkyNDY1OSwyMTE3ND
+I2ODM0XX0=
 -->
