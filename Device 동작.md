@@ -78,22 +78,15 @@ WizFi360을 예제로써 설명함
 #### Tags structure
 
 ```json
-"device_hw_info”: {
-“deviceManufacturer”: {“type”: “string”},
-“deviceCategory”: {“type”: “string”},
-
-“deviceModelNo”:{“type”: “string”},
-
-“hwVersion”:{“type”: “string”}
-
+"device_hw_info": {
+	"deviceManufacturer": {"type": "string"},
+	"deviceCategory": {"type": "string"},
+	"deviceModelNo":{"type": "string"},
+	"hwVersion":{"type": "string"}
 },
-
-“deviceInfo”:{
-
-“owner”:{“type”: “email”},
-
-“deviceNickName”:{“type”: “string”},
-
+"deviceInfo":{
+	"owner":{"type": "email"},
+	"deviceNickName":{"type": "string"},
 }
 ```
 #### Desired property structure
@@ -116,11 +109,10 @@ WizFi360을 예제로써 설명함
 ```
 #### Reported property structure
 ```json
-"Firmware" : {
-        "fwVersion": {"type": "integer"},
-},
-"HostFirmware" : {
-        "fwVersion": {"type": "integer"},
+"DeviceStatus"  : {
+	"fwStatus": {"type":"boolean", "initial_state":"false"},
+	
+	"isActivated": {"type": "true", "initial_state":"false"}
 },
 "UserProperty": {
         "UpMessage":{"type": "string","maxNo":50}
@@ -129,6 +121,6 @@ WizFi360을 예제로써 설명함
 
 #### Event data
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODU4MjQ5NjgsMTU4NTkyNDY1OSwyMT
-E3NDI2ODM0XX0=
+eyJoaXN0b3J5IjpbLTg3MDY0MDY1NCwxNTg1OTI0NjU5LDIxMT
+c0MjY4MzRdfQ==
 -->
