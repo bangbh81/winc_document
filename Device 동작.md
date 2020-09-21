@@ -21,7 +21,7 @@ Desired property는 총 3 종류로 이루어 진다.
 3. UserProperty
 
 * JSON Structure
-```js
+```json
 "Firmware" : {
         "fwVersionName": {"type": "string"},
         "fwVersion": {"type": "integer"},
@@ -41,7 +41,7 @@ Desired property는 총 3 종류로 이루어 진다.
 }
 ```
 * Device Twin Example
-```javascript
+```json
 "Firmware" : {
         "fwVersionName": "v1.0.15",
         "fwVersion": "15",
@@ -73,6 +73,8 @@ Desired property는 총 3 종류로 이루어 진다.
 
 **Publish topic:** `devices/{devices name}/message/events/`
 
+## Example device
+WizFi360을 예제로써 설며
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzQyNjgzNF19
+eyJoaXN0b3J5IjpbNzIyMDE3NTU4LDIxMTc0MjY4MzRdfQ==
 -->
