@@ -14,7 +14,7 @@ winc.ai로부터 트윈이 업데이트되면 디바이스는 업데이트 된 d
 
 **Subscribe topic:** `$iothub/twin/PATCH/properties/desired/#`
 
-######  Desired property
+####  Desired property
 Desired property는 총 3 종류로 이루어 진다.
 1. Firmware
 2. HostFirmware
@@ -58,6 +58,7 @@ Desired property는 총 3 종류로 이루어 진다.
 
 #### Reported property update (Device to Cloud)
 디바이스는 자신의 상태를 Device Twin의 Reported property를 업데이트하여 클라우드에 전달한다. Reported Property update는 아래와 같은 토픽에 JSON형식의 payload를 발행하면 수행된다.
+
 **Publish topic:** `iothub/twin/PATCH/properties/reported/?rid={requeste id}` //request id can be any integer
 
 #### Getting device twin from the device
@@ -69,8 +70,9 @@ Desired property는 총 3 종류로 이루어 진다.
 
 ## Event data update
 디바이스로부터 발생된 데이터는 JSON 형식으로 아래 토픽을 통해 전달되어야 한다.
+
 **Publish topic:** `devices/{devices name}/message/events/`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNzc5NzM2Ml19
+eyJoaXN0b3J5IjpbLTk0NDE4MzQ5OF19
 -->
