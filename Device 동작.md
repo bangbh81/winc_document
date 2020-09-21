@@ -122,12 +122,20 @@ WizFi360을 예제로써 설명함
 #### Event data
 ```json
 "EventDataFormat":{
+	"type":"string",
+}
+```
+
+##### Example for the event data format
+```json
+"EventDataFormat":{
 	"type":"json",
-	"type
-	
+	"data":{
+		"name
+	}
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgxOTkxNTM3LDE1ODU5MjQ2NTksMjExNz
-QyNjgzNF19
+eyJoaXN0b3J5IjpbLTIxMzc3MTIwOCwxNTg1OTI0NjU5LDIxMT
+c0MjY4MzRdfQ==
 -->
