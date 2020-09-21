@@ -74,7 +74,28 @@ Desired property는 총 3 종류로 이루어 진다.
 **Publish topic:** `devices/{devices name}/message/events/`
 
 ## Example device
-WizFi360을 예제로써 설며
+WizFi360을 예제로써 설명함
+#### Desired property
+```json
+"Firmware" : {
+        "fwVersionName": {"type": "string"},
+        "fwVersion": {"type": "integer"},
+        "fwBinURL": {"type": "URL"},
+        "fwToken": {"type": "string"}
+},
+"HostFirmware" : {
+        "fwVersionName": {"type": "string"},
+        "fwVersion": {"type": "integer"},
+        "fwBinURL": {"type": "URL"},
+        "fwToken": {"type": "string"}
+},
+"UserProperty": {
+        "DownMessage":{"type": "string","maxNo":50}
+}
+```
+
+```json
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIyMDE3NTU4LDIxMTc0MjY4MzRdfQ==
+eyJoaXN0b3J5IjpbLTE1NjU5OTg4NzAsMjExNzQyNjgzNF19
 -->
