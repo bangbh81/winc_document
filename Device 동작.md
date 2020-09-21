@@ -1,5 +1,5 @@
 For Device providers
-## Device 초기 동작
+# Device 초기 동작
 디바이스 초기
 1. 인증서가 있는지 검사
 2. 없으면 Auth 서버에 접속하여 인증서 다운로드 시도
@@ -7,14 +7,14 @@ For Device providers
 4. IoT 허브로 접속하여 IsActivate 업데이트(!)
 5. 인증서가 있다면 IsActivate 확인 후 정상 동작.
 
-## Device twin update
-#### Desired property update (Cloud to Device)
+# Device twin update
+## Desired property update (Cloud to Device)
 winc.ai로부터 트윈이 업데이트되면 디바이스는 업데이트 된 desired property를 json 형식으로 받는다.
 디바이스는 desired property를 받기 위해 아래와 같은 토픽을 구독해야 한다.
 
 **Subscribe topic:** `$iothub/twin/PATCH/properties/desired/#`
 
-####  Desired property
+###  Desired property
 Desired property는 총 3 종류로 이루어 진다.
 1. Firmware
 2. HostFirmware
@@ -56,7 +56,7 @@ Desired property는 총 3 종류로 이루어 진다.
 ```
 
 
-#### Reported property update (Device to Cloud)
+### Reported property update (Device to Cloud)
 디바이스는 자신의 상태를 Device Twin의 Reported property를 업데이트하여 클라우드에 전달한다. Reported Property update는 아래와 같은 토픽에 JSON형식의 payload를 발행하면 수행된다.
 
 **Publish topic:** `iothub/twin/PATCH/properties/reported/?rid={requeste id}` //request id can be any integer
@@ -68,11 +68,11 @@ Desired property는 총 3 종류로 이루어 진다.
 3. Json format of device properties will come via topic `$iothub/twin/res/{status}/?$rid={request id}`
 
 
-## Event data update
+### Event data update
 디바이스로부터 발생된 데이터는 JSON 형식으로 아래 토픽을 통해 전달되어야 한다.
 
 **Publish topic:** `devices/{devices name}/message/events/`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NDE4MzQ5OF19
+eyJoaXN0b3J5IjpbMTUxNzQ2MzMyNV19
 -->
