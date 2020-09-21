@@ -131,12 +131,13 @@ WizFi360을 예제로써 설명함
 "EventDataFormat":{
 	"type":"json",
 	"data":{
-		"StrMessage": {"type":"string"},
-		"Temperature": {"type":"integer", "max":50, "min":50}
+		"StrMessage": {"type":"string","maxlen":100},
+		"Temperature": {"type":"integer", "max":50, "min":50},
+		"Humidity": {"type":"integer", "max":50, "min":50}
 	}
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNjQ0Mjg4OCwxNTg1OTI0NjU5LDIxMT
-c0MjY4MzRdfQ==
+eyJoaXN0b3J5IjpbLTEwMDgzODQyNzUsMTU4NTkyNDY1OSwyMT
+E3NDI2ODM0XX0=
 -->
