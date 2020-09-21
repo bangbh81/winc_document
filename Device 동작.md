@@ -75,7 +75,28 @@ Desired property는 총 3 종류로 이루어 진다.
 
 ## Example device
 WizFi360을 예제로써 설명함
-#### Desired property
+#### Tags structure
+
+```json
+"device_hw_info”: {
+“deviceManufacturer”: {“type”: “string”},
+“deviceCategory”: {“type”: “string”},
+
+“deviceModelNo”:{“type”: “string”},
+
+“hwVersion”:{“type”: “string”}
+
+},
+
+“deviceInfo”:{
+
+“owner”:{“type”: “email”},
+
+“deviceNickName”:{“type”: “string”},
+
+}
+```
+#### Desired property structure
 ```json
 "Firmware" : {
         "fwVersionName": {"type": "string"},
@@ -93,7 +114,7 @@ WizFi360을 예제로써 설명함
         "DownMessage":{"type": "string","maxNo":50}
 }
 ```
-#### Reported property
+#### Reported property structure
 ```json
 "Firmware" : {
         "fwVersion": {"type": "integer"},
@@ -106,7 +127,8 @@ WizFi360을 예제로써 설명함
 }
 ```
 
+#### Event data
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NzE3NTI2MSwxNTg1OTI0NjU5LDIxMT
-c0MjY4MzRdfQ==
+eyJoaXN0b3J5IjpbLTExODU4MjQ5NjgsMTU4NTkyNDY1OSwyMT
+E3NDI2ODM0XX0=
 -->
