@@ -93,7 +93,7 @@ WizFi360을 예제로써 설명함
         "DownMessage":{"type": "string","maxNo":50}
 }
 ```
-
+#### Reported property
 ```json
 "Firmware" : {
         "fwVersion": {"type": "integer"},
@@ -105,6 +105,8 @@ WizFi360을 예제로써 설명함
         "UpMessage":{"type": "string","maxNo":50}
 }
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTkyNDY1OSwyMTE3NDI2ODM0XX0=
+eyJoaXN0b3J5IjpbLTk1NzE3NTI2MSwxNTg1OTI0NjU5LDIxMT
+c0MjY4MzRdfQ==
 -->
