@@ -8,8 +8,10 @@ For Device providers
 5. 인증서가 있다면 IsActivate 확인 후 정상 동작.
 
 # Device twin update
-|Topic Name|PUB / SUB|Description|
-|------|---|---|
+|Update Type | Topic Name|PUB / SUB|Description|
+|---|---|---|
+
+
 |$iothub/twin/PATCH/properties/desired/#|SUB|Device Information Pub Topic|
 |iothub/twin/PATCH/properties/reported/?rid={requeste id}|SUB|F/W Information, User Data Sub Topic|
 |devices/{devices name}/message/events/|PUB|User Data Pub Topic|
@@ -144,6 +146,6 @@ WizFi360을 예제로써 설명함
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzc4Mjc5MCwtMTAwODM4NDI3NSwxNT
+eyJoaXN0b3J5IjpbLTgzNTI3NjkyNCwtMTAwODM4NDI3NSwxNT
 g1OTI0NjU5LDIxMTc0MjY4MzRdfQ==
 -->
