@@ -8,6 +8,12 @@ For Device providers
 5. 인증서가 있다면 IsActivate 확인 후 정상 동작.
 
 # Device twin update
+|Topic Name|PUB / SUB|Description|
+|------|---|---|
+|$iothub/twin/PATCH/properties/desired/#|SUB|Device Information Pub Topic|
+|iothub/twin/PATCH/properties/reported/?rid={requeste id}|SUB|F/W Information, User Data Sub Topic|
+|devices/{devices name}/message/events/|PUB|User Data Pub Topic|
+
 ## Desired property update (Cloud to Device)
 winc.ai로부터 트윈이 업데이트되면 디바이스는 업데이트 된 desired property를 json 형식으로 받는다.
 디바이스는 desired property를 받기 위해 아래와 같은 토픽을 구독해야 한다.
@@ -138,6 +144,6 @@ WizFi360을 예제로써 설명함
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDgzODQyNzUsMTU4NTkyNDY1OSwyMT
-E3NDI2ODM0XX0=
+eyJoaXN0b3J5IjpbLTE5Mzc4Mjc5MCwtMTAwODM4NDI3NSwxNT
+g1OTI0NjU5LDIxMTc0MjY4MzRdfQ==
 -->
