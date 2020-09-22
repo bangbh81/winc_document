@@ -17,7 +17,8 @@ MQTT Topic should be used from the device side.
 |Twin|$iothub/twin/PATCH/properties/desired/#|SUB|Device Twin C2D
 
 # Device twin
-Device twin은 두가지 종류가 있다. Desired property는 Cloud to Device의 방향으로 Firmware Update와 관련된 내용들을 업데이트할 수 있으며 Reported Property는 Device to Cloud의 방향으로 Command에 대한 Response와 디바이스의 등록 여부 등의 기본적인 내요
+Device twin은 두가지 종류가 있다. Desired property는 Cloud to Device의 방향으로 Firmware Update와 관련된 내용들을 업데이트할 수 있으며 Reported Property는 Device to Cloud의 방향으로 Command에 대한 Response와 디바이스의 등록 여부 등의 기본적인 내용들을 업데이트 할 수 있다.
+
 ## Desired property update (Cloud to Device)
 winc.ai로부터 트윈이 업데이트되면 디바이스는 업데이트 된 desired property를 json 형식으로 받는다.
 디바이스는 desired property를 받기 위해 아래와 같은 토픽을 구독해야 한다.
@@ -25,10 +26,9 @@ winc.ai로부터 트윈이 업데이트되면 디바이스는 업데이트 된 d
 **Subscribe topic:** `$iothub/twin/PATCH/properties/desired/#`
 
 ###  Desired property
-Desired property는 총 3 종류로 이루어 진다.
+Desired property는 총 2 종류로 이루어 진다.
 1. Firmware
 2. HostFirmware
-3. UserProperty
 
 * JSON Structure
 ```json
@@ -43,11 +43,6 @@ Desired property는 총 3 종류로 이루어 진다.
         "fwVersion": {"type": "integer"},
         "fwBinURL": {"type": "URL"},
         "fwToken": {"type": "string"}
-},
-"UserProperty": {
-        "GPIO0":{"type":"boolean", "initial_state": "true"},
-        "GPIO1":{"type":"boolean", "initial_state": "true"},
-        "DownMessage":{"type": "string","maxNo":50}
 }
 ```
 * Device Twin Example
@@ -148,7 +143,7 @@ WizFi360을 예제로써 설명함
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIzNzg1MzM5LC0xMzk4NjM0OTE1LC0xND
-AxNDk2NTIxLC0xMDA4Mzg0Mjc1LDE1ODU5MjQ2NTksMjExNzQy
-NjgzNF19
+eyJoaXN0b3J5IjpbLTEzNDk2MjQwMDYsLTEzOTg2MzQ5MTUsLT
+E0MDE0OTY1MjEsLTEwMDgzODQyNzUsMTU4NTkyNDY1OSwyMTE3
+NDI2ODM0XX0=
 -->
