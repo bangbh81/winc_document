@@ -9,7 +9,7 @@ For Device providers
 
 # Device twin update
 
-MQTT Table
+### MQTT Topic table
 |Update Type | Topic Name|PUB/SUB|Description|
 |:---:|:---|:---:|:---|
 |Twin|$iothub/twin/PATCH/properties/desired/#|SUB|Device Twin C2D
@@ -146,6 +146,6 @@ WizFi360을 예제로써 설명함
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkzNzU2MDk5LC0xMDA4Mzg0Mjc1LDE1OD
-U5MjQ2NTksMjExNzQyNjgzNF19
+eyJoaXN0b3J5IjpbLTE0MDE0OTY1MjEsLTEwMDgzODQyNzUsMT
+U4NTkyNDY1OSwyMTE3NDI2ODM0XX0=
 -->
