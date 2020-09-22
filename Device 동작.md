@@ -10,10 +10,10 @@ For Device providers
 # MQTT Topic table
 |Update Type | Topic Name|PUB/SUB|Description|
 |:---:|:---|:---:|:---|
+|Data|devices/{device_id}/messages/events/|PUB|Event Data|
+|Data|devices/{device_id}/messages/devicebound/#|SUB|Command|
 |Twin|$iothub/twin/PATCH/properties/desired/#|SUB|Device Twin C2D
-|Twin|$iothub/twin/PATCH/properties/reported/?rid={requeste id}|PUB|Device Twin D2C
-|Data|devices/{devices name}/message/events/|PUB|Event Data|
-|Data|devices/{device_id}/messages/devicebound/#|
+
 
 # Device twin update
 
@@ -147,7 +147,7 @@ WizFi360을 예제로써 설명함
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDM4NTEyMjUsLTEzOTg2MzQ5MTUsLT
-E0MDE0OTY1MjEsLTEwMDgzODQyNzUsMTU4NTkyNDY1OSwyMTE3
-NDI2ODM0XX0=
+eyJoaXN0b3J5IjpbMTczNjkzNzg1MywtMTM5ODYzNDkxNSwtMT
+QwMTQ5NjUyMSwtMTAwODM4NDI3NSwxNTg1OTI0NjU5LDIxMTc0
+MjY4MzRdfQ==
 -->
