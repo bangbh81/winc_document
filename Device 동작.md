@@ -13,7 +13,7 @@ For Device providers
 |Update Type | Topic Name|PUB/SUB|Description|
 |:---:|:---|:---:|:---|
 |Twin|$iothub/twin/PATCH/properties/desired/#|SUB|Device Twin C2D
-|Twin|iothub/twin/PATCH/properties/reported/?rid={requeste id}|PUB|Device Twin D2C
+|Twin|$iothub/twin/PATCH/properties/reported/?rid={requeste id}|PUB|Device Twin D2C
 |Data|devices/{devices name}/message/events/|PUB|Event Data
 
 ## Desired property update (Cloud to Device)
@@ -67,7 +67,7 @@ Desired property는 총 3 종류로 이루어 진다.
 ## Reported property update (Device to Cloud)
 디바이스는 자신의 상태를 Device Twin의 Reported property를 업데이트하여 클라우드에 전달한다. Reported Property update는 아래와 같은 토픽에 JSON형식의 payload를 발행하면 수행된다.
 
-**Publish topic:** `iothub/twin/PATCH/properties/reported/?rid={requeste id}` //request id can be any integer
+**Publish topic:** `$iothub/twin/PATCH/properties/reported/?rid={requeste id}` //request id can be any integer
 
 ### Getting device twin from the device
 디바이스에서 트윈 정보를 읽기 위해서는 다음과 같은 순서를 따른다.
@@ -146,6 +146,6 @@ WizFi360을 예제로써 설명함
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDE0OTY1MjEsLTEwMDgzODQyNzUsMT
-U4NTkyNDY1OSwyMTE3NDI2ODM0XX0=
+eyJoaXN0b3J5IjpbLTEzOTg2MzQ5MTUsLTE0MDE0OTY1MjEsLT
+EwMDgzODQyNzUsMTU4NTkyNDY1OSwyMTE3NDI2ODM0XX0=
 -->
