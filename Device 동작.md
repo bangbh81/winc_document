@@ -101,16 +101,15 @@ WizFi360을 예제로써 설명함
         "fwVersionName": {"type": "string"},
         "fwVersion": {"type": "integer"},
         "fwBinURL": {"type": "URL"},
-        "fwToken": {"type": "string"}
+        "fwToken": {"type": "string"},
+        "autoUpdate":{"type":"boolean"}
 },
 "HostFirmware" : {
         "fwVersionName": {"type": "string"},
         "fwVersion": {"type": "integer"},
         "fwBinURL": {"type": "URL"},
-        "fwToken": {"type": "string"}
-},
-"UserProperty": {
-        "DownMessage":{"type": "string","maxNo":50}
+        "fwToken": {"type": "string"},
+        "autoUpdate":{"type":"boolean"}
 }
 ```
 #### Reported property structure
@@ -144,7 +143,7 @@ WizFi360을 예제로써 설명함
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjg4NTU2NCwtMTM0OTYyNDAwNiwtMT
-M5ODYzNDkxNSwtMTQwMTQ5NjUyMSwtMTAwODM4NDI3NSwxNTg1
-OTI0NjU5LDIxMTc0MjY4MzRdfQ==
+eyJoaXN0b3J5IjpbLTE2NzkzOTg4ODgsMTAwNjg4NTU2NCwtMT
+M0OTYyNDAwNiwtMTM5ODYzNDkxNSwtMTQwMTQ5NjUyMSwtMTAw
+ODM4NDI3NSwxNTg1OTI0NjU5LDIxMTc0MjY4MzRdfQ==
 -->
