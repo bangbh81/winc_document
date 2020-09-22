@@ -37,7 +37,7 @@ Desired property는 총 2 종류로 이루어 진다.
         "fwVersion": {"type": "integer"},
         "fwBinURL": {"type": "URL"},
         "fwToken": {"type": "string"},
-        "며새
+        "autoUpdate":{},
 },
 "HostFirmware" : {
         "fwVersionName": {"type": "string"},
@@ -144,7 +144,7 @@ WizFi360을 예제로써 설명함
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0OTMwMTU4NiwtMTM0OTYyNDAwNiwtMT
+eyJoaXN0b3J5IjpbMTAwNjg4NTU2NCwtMTM0OTYyNDAwNiwtMT
 M5ODYzNDkxNSwtMTQwMTQ5NjUyMSwtMTAwODM4NDI3NSwxNTg1
 OTI0NjU5LDIxMTc0MjY4MzRdfQ==
 -->
