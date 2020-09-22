@@ -15,10 +15,9 @@ MQTT Topic should be used from the device side.
 |Data|devices/{device_id}/messages/devicebound/#|SUB|Command|
 |Twin|$iothub/twin/PATCH/properties/reported/?rid={requeste id}|PUB|Device Twin D2C
 |Twin|$iothub/twin/PATCH/properties/desired/#|SUB|Device Twin C2D
-Device da
 
-# Device twin update
-
+# Device twin
+Device twin은 두가지 종류가 있다. Desired property는 Firmw
 ## Desired property update (Cloud to Device)
 winc.ai로부터 트윈이 업데이트되면 디바이스는 업데이트 된 desired property를 json 형식으로 받는다.
 디바이스는 desired property를 받기 위해 아래와 같은 토픽을 구독해야 한다.
@@ -149,7 +148,7 @@ WizFi360을 예제로써 설명함
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzY2ODAxNDUsLTEzOTg2MzQ5MTUsLT
-E0MDE0OTY1MjEsLTEwMDgzODQyNzUsMTU4NTkyNDY1OSwyMTE3
-NDI2ODM0XX0=
+eyJoaXN0b3J5IjpbMTc3NzAzODA0NCwtMTM5ODYzNDkxNSwtMT
+QwMTQ5NjUyMSwtMTAwODM4NDI3NSwxNTg1OTI0NjU5LDIxMTc0
+MjY4MzRdfQ==
 -->
