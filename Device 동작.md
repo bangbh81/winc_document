@@ -9,8 +9,10 @@ For Device providers
 
 # Device twin update
 |Update Type | Topic Name|PUB / SUB|Description|
-|---|---|---|
-
+|---|---|---|---|
+|Twin|$iothub/twin/PATCH/properties/desired/#|SUB|Device Twin C2D
+|Twin|iothub/twin/PATCH/properties/reported/?rid={requeste id}|PUB|Device Twin D2C
+|Data|devices/{devices name}/message/events/|PUB|
 
 |$iothub/twin/PATCH/properties/desired/#|SUB|Device Information Pub Topic|
 |iothub/twin/PATCH/properties/reported/?rid={requeste id}|SUB|F/W Information, User Data Sub Topic|
@@ -146,6 +148,6 @@ WizFi360을 예제로써 설명함
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNTI3NjkyNCwtMTAwODM4NDI3NSwxNT
-g1OTI0NjU5LDIxMTc0MjY4MzRdfQ==
+eyJoaXN0b3J5IjpbLTE4MjYwODU4OTQsLTEwMDgzODQyNzUsMT
+U4NTkyNDY1OSwyMTE3NDI2ODM0XX0=
 -->
