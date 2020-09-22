@@ -8,15 +8,13 @@ For Device providers
 5. 인증서가 있다면 IsActivate 확인 후 정상 동작.
 
 # Device twin update
-|Update Type | Topic Name|PUB / SUB|Description|
-|---|---|---|---|
+
+MQTT Table
+|Update Type | Topic Name|PUB/SUB|Description|
+|:---:|:---|:---:|:---|
 |Twin|$iothub/twin/PATCH/properties/desired/#|SUB|Device Twin C2D
 |Twin|iothub/twin/PATCH/properties/reported/?rid={requeste id}|PUB|Device Twin D2C
-|Data|devices/{devices name}/message/events/|PUB|
-
-|$iothub/twin/PATCH/properties/desired/#|SUB|Device Information Pub Topic|
-|iothub/twin/PATCH/properties/reported/?rid={requeste id}|SUB|F/W Information, User Data Sub Topic|
-|devices/{devices name}/message/events/|PUB|User Data Pub Topic|
+|Data|devices/{devices name}/message/events/|PUB|Event Data
 
 ## Desired property update (Cloud to Device)
 winc.ai로부터 트윈이 업데이트되면 디바이스는 업데이트 된 desired property를 json 형식으로 받는다.
@@ -148,6 +146,6 @@ WizFi360을 예제로써 설명함
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjYwODU4OTQsLTEwMDgzODQyNzUsMT
-U4NTkyNDY1OSwyMTE3NDI2ODM0XX0=
+eyJoaXN0b3J5IjpbOTkzNzU2MDk5LC0xMDA4Mzg0Mjc1LDE1OD
+U5MjQ2NTksMjExNzQyNjgzNF19
 -->
